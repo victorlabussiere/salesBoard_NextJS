@@ -5,6 +5,16 @@
     width: fit-content;
 }
 
+.maisVendidos p {
+    align-self: flex-end;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #636363;
+}
+
 .cardsArea {
     background-color: #f3f5f9;
     border-radius: .5rem;
@@ -12,7 +22,8 @@
 
     display: flex;
     flex-wrap: wrap;
-    width: 30vw;
+    min-width: fit-content;
+    max-width: 32vw;
     gap: 1.5rem;
 }
 
