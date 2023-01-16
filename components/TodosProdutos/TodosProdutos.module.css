@@ -39,10 +39,13 @@
     padding: 1rem;
 }
 
-.tabelaProdutos tbody tr td:nth-child(1) {
+.rowData {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.rowData div {
     display: flex;
-    gap: 1rem;
-    align-items: center;
+    gap: 2rem;
 }
 
 .itemDetails {

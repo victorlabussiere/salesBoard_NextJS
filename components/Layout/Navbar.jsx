@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import styles from '../styles/Navbar.module.css'
+import styles from '../../styles/Navbar.module.css'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 const inter = Inter({ subsets: ['latin'] })

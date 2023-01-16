@@ -1,7 +1,7 @@
 import styles from '../styles/Home.module.css'
 
-import MaisVendidos from '../components/MaisVendidos'
-import TodosProdutos from '../components/TodosProdutos'
+import MaisVendidos from '../components/MaisVendidos/MaisVendidos'
+import TodosProdutos from '../components/TodosProdutos/TodosProdutos'
 
 import { Inter } from '@next/font/google'
 const inter = Inter({ subsets: ['latin'] })
