@@ -1,9 +1,8 @@
-import styles from './TodosProdutos.module.css'
+import styles from './Favoritos.module.css'
 import Image from 'next/image'
 
 import { IntlProvider, FormattedNumber } from 'react-intl'
 const locale = 'pt-Br'
-
 export default function CardTodos({ produto }) {
 
     function returnValue(value) {
@@ -24,12 +23,14 @@ export default function CardTodos({ produto }) {
             </td>
 
             <td>
-                <p>{returnValue(produto.price)}</p>
+                <p>
+                    {returnValue(produto.price)}
+                </p>
             </td>
 
             <td>
-                <p>Faturamento total: {returnValue(produto.sales * produto.price)}</p>
-                <p>de {produto.sales} vendas</p>
+                <p><strong>Faturamento total: {returnValue(produto.price * produto.sales)}</strong></p>
+                <p>Total de Vendas: {produto.sales}</p>
             </td>
 
             <td>

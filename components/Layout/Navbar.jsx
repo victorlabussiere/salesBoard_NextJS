@@ -1,12 +1,11 @@
-import Link from 'next/link'
-import styles from '../../styles/Navbar.module.css'
 import Image from 'next/image'
+import styles from '../../styles/Navbar.module.css'
 import { Inter } from '@next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Navbar() {
     return (
-        <header className={`${styles.navContainer} ${inter.className}`}>
+        <nav className={`${styles.navContainer} ${inter.className}`}>
             <header className={styles.header}>
                 <h2>xco<span>+</span></h2>
                 <div className={styles.profilePic}>
@@ -27,14 +26,7 @@ export default function Navbar() {
                     />
                 </div>
             </section>
-
-            <nav className={styles.clientNav}>
-                <div className={styles.buttonsArea}>
-                    <Link href='/' className='pButton'>Todas</Link>
-                    <Link href='/' className='sButton'>Favoritos</Link>
-                </div>
-                <Link href='/' className='pButton'> Criar Novo</Link>
-            </nav>
-        </header>
+        </nav >
     )
 }
+

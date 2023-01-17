@@ -69,17 +69,3 @@
     background-color: white;
     color: #99A0B0;
 }
-
-.clientNav {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 4rem;
-    height: fit-content;
-}
-
-.buttonsArea {
-    display: flex;
-    gap: .5rem;
-}
