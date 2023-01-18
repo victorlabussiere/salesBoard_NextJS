@@ -1,12 +1,17 @@
-# Bem vindo ao XCO+!
+# Bem vindo ao XCO+
 ## Um projeto fictício que simula uma quadro de vendas para uma empresa.
 
 
 ### Para iniciar o projeto, digite os seguintes comandos no terminal:
 
-Para iniciar a instalação dos pacotes necessários: ```npm i ``` 
+Primeiro inicializa a instalação dos pacotes necessários com o comado: ```npm i ``` ;
 
-E, em seguida, para rodar a aplicação: ``` npm run start``` 
+Você pode navegar pela produção pelo ambiente de desenvolvimento utilizando o comando ```npm run dev```;
+
+Porém, também é possível preparar o projeto para produção utilizando o comando: ```npm run build```;
+ - Desta maneira, você prepara todos os arquivos do projeto de forma pre-renderizada no Server side da aplicação, tornando o aplicativo mais performático.
+
+Em seguida, basta iniciar a aplicação montada para o cliente com o comando: ``` npm run start``` 
 - A aplicação será destinada para uma porta 3000, do localhost. 
 - Basta acessar 'http://localhost:3000/' para reproduzir o projeto.
   
