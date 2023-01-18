@@ -7,6 +7,11 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <meta charSet='utf-8' />
+        <meta name='author' content='Victor Labussiere' />
+        <meta name='description' content='Web Application developed with Next js by Victor Labussiere' />
+        <meta name='keywords' content='React Javascript Frontend Junior UXDesigner NextJS NodeJS MirageJS' />
+        <title>Sales Board XCO+</title>
       </Head>
       <Layout children={(<Component {...pageProps} />)} />
     </>

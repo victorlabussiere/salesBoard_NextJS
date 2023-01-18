@@ -104,6 +104,7 @@ strong {
   border: unset;
 
   font-size: 1.2rem;
+  cursor: pointer;
 }
 
 .sButton {
@@ -115,6 +116,7 @@ strong {
   border: unset;
 
   font-size: 1.2rem;
+  cursor: pointer;
 }
 
 .pButton:hover {
@@ -128,8 +130,8 @@ strong {
 }
 
 .boldBlue {
-  font-weight: 600;
-  font-size: 14px;
+  font-weight: bold;
+  font-size: 1rem;
   line-height: 135%;
 
   color: #235EE7;
@@ -175,4 +177,28 @@ strong {
 
 .closeModal:hover {
   background-color: #c82c17;
+}
+
+/* Footer */
+footer {
+  background-color: #17223E;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 2.5rem;
+
+  align-items: center;
+  justify-content: center;
+  gap: .6rem;
+
+  color: #dcdcdc;
+}
+
+footer a {
+  color: #dcdcdc;
+  transition: .2s all ease-in-out;
+}
+
+footer a:hover {
+  color: #fff;
 }

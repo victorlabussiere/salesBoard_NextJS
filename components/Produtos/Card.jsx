@@ -30,11 +30,11 @@ export default function Card({ produto, statusPage }) {
     return (
         <tr className={styles.rowData}>
             <td>
-                <div >
-                    <Image src={produto.picture} width={40} height={40} alt='imagem mockada' />
-                    <p>{produto.name} <br /><strong className='boldBlue'>#{produto.code}</strong></p>
-                    <p>{produto.id}# </p>
-                </div>
+                <Image src={produto.picture} width={40} height={40} alt='imagem mockada' />
+                <header>
+                    <p><strong className='boldBlue'>{produto.name}</strong><br />#{produto.code} </p>
+                    <p>ID: #{produto.id}</p>
+                </header>
             </td>
 
             <td>
@@ -43,7 +43,7 @@ export default function Card({ produto, statusPage }) {
 
             <td>
                 <p>Faturamento total: {returnValue(produto.sales * produto.price)}</p>
-                <p>de {produto.sales} vendas</p>
+                <p>Quantidade de vendas: {produto.sales}</p>
             </td>
 
             <td>

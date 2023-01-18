@@ -5,25 +5,24 @@ import { useEffect, useState } from 'react'
 
 export default function TodosProdutos({ produtos }) {
     let [favoritos, setFavoritos] = useState([])
-
     useEffect(() => {
-        setFavoritos(prev => prev = produtos.filter(i => i.favorite === true))
-    }, [Card])
+        setFavoritos(prev => prev = (produtos.filter(i => i.favorite === true)))
+    }, [])
 
-
+    let [currentPage, setCurrentPage] = useState(1)
     let [startPage, setStartPage] = useState(0)
-    let currentPage = (startPage / 10) + 1
     let pageSize = 10
-    let totalPages = Math.round(favoritos.length / 10)
+    let totalPages = favoritos.length / 10
 
     function previousPage() {
-        if (currentPage <= 1) return;
-        if (currentPage == totalPages) return setStartPage(prev => prev = prev - 10)
+        if (currentPage == 1) return;
+        setCurrentPage(prev => prev = prev - 1)
         return setStartPage(prev => prev - 10)
     }
 
     function nextPage() {
-        if (favoritos.length <= pageSize) return
+        if (currentPage === Math.ceil(totalPages)) return;
+        setCurrentPage(p => p = p + 1)
         setStartPage(prev => prev + 10)
         return;
     }
@@ -46,6 +45,7 @@ export default function TodosProdutos({ produtos }) {
 
             {favoritos.length != 0 ?
                 <>
+
                     <table className={styles.tabelaProdutos}>
                         <thead>
                             <tr>
@@ -57,17 +57,18 @@ export default function TodosProdutos({ produtos }) {
                             </tr>
                         </thead>
                         <tbody>
-                            {favoritos.slice(startPage, startPage + pageSize).map(fav => {
+                            {favoritos.slice(startPage, pageSize + startPage).map(fav => {
                                 return (<Card key={fav.id} produto={fav} statusPage={true} />)
                             })}
                         </tbody>
                     </table>
-                    <p>Página {favoritos.length >= 1 ? favoritos.length / favoritos.length : 1} de {favoritos.length == 0 ? Math.round(favoritos.length / 10) : 1}</p>
+
+                    <p>Página {favoritos.length == 0 ? 1 : currentPage} de {favoritos.length == 0 ? 1 : favoritos.length / 10 <= Math.floor(favoritos.length / favoritos.length + 1) ? 2 : Math.floor(favoritos.length / 10)}</p>
                 </>
                 : (
                     <>
                         <h3>Você ainda não possui itens favoritos.</h3>
-                        <i>Retorne para aba principal para adicionar itens aos favoritos clicando no ícone: &hearts;</i>
+                        <i>Clique no ícone <strong> &hearts; </strong> para adicionar um item a sua lista de favoritos.</i>
                     </>
                 )
             }

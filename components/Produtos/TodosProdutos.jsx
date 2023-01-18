@@ -6,18 +6,20 @@ import { useEffect, useState } from 'react'
 export default function TodosProdutos({ produto }) {
     const produtos = produto
 
+    let [currentPage, setCurrentPage] = useState(1)
     let [startPage, setStartPage] = useState(0)
-    let currentPage = (startPage / 10) + 1
     let pageSize = 10
-    let totalPages = Math.round(produtos.length / 10)
+    let totalPages = produtos.length / 10
 
     function previousPage() {
-        if (currentPage === 1) return;
+        if (currentPage == 1) return;
+        setCurrentPage(prev => prev = prev - 1)
         return setStartPage(prev => prev - 10)
     }
 
     function nextPage() {
-        if (currentPage === totalPages) return
+        if (currentPage === Math.ceil(totalPages)) return;
+        setCurrentPage(p => p = p + 1)
         setStartPage(prev => prev + 10)
         return;
     }
@@ -63,7 +65,7 @@ export default function TodosProdutos({ produto }) {
                     </>
                 )}
 
-            <p>Página {Number.parseInt(startPage / 10 + 1)} de {Math.round(produto.length / pageSize) + 1}</p>
+            <p>Página {produtos.length == 0 ? 1 : currentPage} de {produtos.length == 0 ? 1 : produtos.length / 10 <= Math.floor(produto.length / produto.length + 1) ? 2 : Math.floor(produtos.length / 10)}</p>
         </div>
     )
 }

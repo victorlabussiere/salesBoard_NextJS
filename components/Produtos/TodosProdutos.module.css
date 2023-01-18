@@ -60,11 +60,44 @@
 
 .rowData {
     border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
-    transition: .2s all ease-in-out;
 }
 
-.rowData:hover {
+.rowData td {
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.rowData td:hover {
     background-color: #d9e1ed;
+    transition: .2s all ease-in-out;
+
+}
+
+.rowData td:first-child {
+    display: flex;
+    gap: 1rem;
+    border-left: none;
+}
+
+.rowData td:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+.rowData td p {
+    line-height: 180%;
+}
+
+.rowData header {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}
+
+.rowData header:first-child {
+    justify-content: flex-start;
 }
 
 .rowData:last-child {
