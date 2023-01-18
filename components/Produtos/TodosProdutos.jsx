@@ -61,7 +61,7 @@ export default function TodosProdutos({ produto }) {
                 : (
                     <>
                         <h3>Você ainda não possui nenhum item</h3>
-                        <i>Adicione itens clicando no botão 'Criar'</i>
+                        <i>Adicione itens clicando no botão &apos;Criar&apos;</i>
                     </>
                 )}
 

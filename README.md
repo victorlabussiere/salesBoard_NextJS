@@ -1,36 +1,22 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Bem vindo ao XCO+!
+## Um projeto fictício que simula uma quadro de vendas para uma empresa.
 
-## Getting Started
 
-First, run the development server:
+### Para iniciar o projeto, digite os seguintes comandos no terminal:
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Para iniciar a instalação dos pacotes necessários: ```npm i ``` 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+E, em seguida, para rodar a aplicação: ``` npm run start``` 
+- A aplicação será destinada para uma porta 3000, do localhost. 
+- Basta acessar 'http://localhost:3000/' para reproduzir o projeto.
+  
+Este projeto teve como sua base de desenvolvido o NextJS, mas também utilizou algumas bibliotecas para simulação mockada de uma API, como o Miragejs e o React-Intl para conversão de valores dinamicamente.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Caso tenha dúvidas sobre o projeto ou tenha interesse em conhecer mais sobre o desenvolvedor por trás dele, disponibilizo meu e-mail para contato:
+> victor.labussiere95@gmail.com
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Você também pode me encontrar no Linkedin a partir do meu perfil:
+> https://linkedin.com/in/victorlabussiere
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Acesse também o meu github e saiba no que ando trabalhando:
+> https://github.com/victorlabussiere
