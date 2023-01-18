@@ -5,6 +5,25 @@
     width: 100%;
 }
 
+.todosProdutos header div {
+    display: flex;
+    gap: 1rem;
+}
+
+.todosProdutos header div button {
+    background-color: transparent;
+    color: unset;
+    outline: none;
+    border: none;
+
+    transition: .1s all ease-in-out;
+}
+
+.todosProdutos header div button:hover {
+    background-color: #F3F5F9;
+    transform: scale(1.04);
+}
+
 .todosProdutos p {
     align-self: flex-end;
 
@@ -40,6 +59,15 @@
 }
 
 .rowData {
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+    transition: .2s all ease-in-out;
+}
+
+.rowData:hover {
+    background-color: #d9e1ed;
+}
+
+.rowData:last-child {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -48,18 +76,20 @@
     gap: 2rem;
 }
 
+.rowData i {
+    cursor: pointer;
+    transition: .2s all ease-in-out;
+}
+
+.rowData i:hover {
+    color: rgb(191, 82, 82);
+}
+
 .itemDetails {
     display: flex;
     gap: 1rem;
     align-items: center;
     width: 64%;
-}
-
-.rowData:first-child {
-    font-weight: 600;
-    font-size: 14px;
-
-    color: #235EE7;
 }
 
 .image {

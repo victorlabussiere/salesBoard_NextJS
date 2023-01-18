@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    max-width: 28%;
+    max-width: 17vw;
     flex-basis: 100%;
     min-width: 20vw;
 }
@@ -34,6 +34,7 @@
 }
 
 .maisVendidos header div button:hover {
+    cursor: pointer;
     background-color: #F3F5F9;
     transform: scale(1.04);
 }
@@ -52,23 +53,34 @@
 .cardsArea {
     background-color: #f3f5f9;
     border-radius: .5rem;
-    padding: 1rem;
+    padding: 1.2rem 0;
     display: flex;
-    justify-content: space-evenly;
     flex-wrap: wrap;
-    flex-basis: calc(50% - 16px);
-    width: 100%;
+    justify-content: space-evenly;
+    flex-basis: calc(40% - 16px);
 }
 
 .cardsArea .card {
-    flex-basis: 40%;
-
     display: flex;
 
     flex-direction: column;
-    padding: .5rem;
-    gap: 1rem;
+    padding: .7rem;
+    gap: 1.2rem;
     max-width: min-content;
+    border-radius: .5rem;
+    margin-bottom: .5rem;
+
+    transition: .2s all ease-in-out;
+}
+
+.card:hover {
+    background-color: #d9e1ed;
+}
+
+.cardsArea .card div {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .cardsArea .card .cardImage {

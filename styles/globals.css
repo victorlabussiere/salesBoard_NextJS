@@ -90,6 +90,11 @@ a {
 
 /* global styles */
 
+strong {
+  font-weight: bold;
+  font-size: 105%;
+}
+
 .pButton {
   background-color: #D32811;
   padding: 8px;
@@ -112,9 +117,14 @@ a {
   font-size: 1.2rem;
 }
 
-.pButton:hover,
+.pButton:hover {
+  cursor: pointer;
+  background-color: #c82c17;
+}
+
 .sButton:hover {
-  transform: scale(1.03);
+  cursor: pointer;
+  background-color: #801a1c;
 }
 
 .boldBlue {
@@ -123,4 +133,46 @@ a {
   line-height: 135%;
 
   color: #235EE7;
+}
+
+.fav {
+  color: red;
+}
+
+/* Modal */
+
+.modal {
+  display: none;
+  visibility: hidden;
+  width: 0;
+  height: 0
+}
+
+.modal.On {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: visible;
+  width: 100vw;
+  height: 100vh;
+
+  background-color: rgba(0, 0, 0, .8);
+}
+
+.closeModal {
+  width: min-content;
+  padding: .2rem;
+  cursor: pointer;
+  color: white;
+  background-color: #ed2d14;
+  border-radius: .4rem;
+  transition: .2s all ease-in-out;
+}
+
+.closeModal:hover {
+  background-color: #c82c17;
 }
