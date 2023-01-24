@@ -1,7 +1,6 @@
 # Bem vindo ao XCO+
 ## Um projeto fictício que simula uma quadro de vendas para uma empresa.
 
-
 ### Para iniciar o projeto, digite os seguintes comandos no terminal:
 
 Primeiro inicializa a instalação dos pacotes necessários com o comado: ```npm i ``` ;
